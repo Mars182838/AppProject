@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A13F4BC1689530500EDBBCD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4BB1689530500EDBBCD /* FirstViewController.m */; };
+		0A13F4BD1689530500EDBBCD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4BB1689530500EDBBCD /* FirstViewController.m */; };
+		0A13F4C1168953FA00EDBBCD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4C0168953FA00EDBBCD /* SecondViewController.m */; };
+		0A13F4C2168953FA00EDBBCD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4C0168953FA00EDBBCD /* SecondViewController.m */; };
+		0A13F4C61689545400EDBBCD /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4C51689545400EDBBCD /* ThirdViewController.m */; };
+		0A13F4C71689545400EDBBCD /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4C51689545400EDBBCD /* ThirdViewController.m */; };
+		0A13F4CF1689570200EDBBCD /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4CE1689570200EDBBCD /* FourViewController.m */; };
+		0A13F4D01689570200EDBBCD /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4CE1689570200EDBBCD /* FourViewController.m */; };
+		0A13F4DA1689823500EDBBCD /* 主页.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A13F4D91689823500EDBBCD /* 主页.png */; };
+		0A13F4E2168987B100EDBBCD /* 收藏.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A13F4DD168987B100EDBBCD /* 收藏.png */; };
+		0A13F4E3168987B100EDBBCD /* 更多.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A13F4DE168987B100EDBBCD /* 更多.png */; };
+		0A13F4E5168987B100EDBBCD /* 资讯.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A13F4E0168987B100EDBBCD /* 资讯.png */; };
+		0A13F4E7168989BA00EDBBCD /* 看展会.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A13F4E6168989BA00EDBBCD /* 看展会.png */; };
+		0A13F4EC16899B6C00EDBBCD /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4EA16899B6C00EDBBCD /* PersonViewController.m */; };
+		0A13F4ED16899B6C00EDBBCD /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A13F4EB16899B6C00EDBBCD /* PersonViewController.xib */; };
+		0A13F4EF16899BE100EDBBCD /* Person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A13F4EE16899BE100EDBBCD /* Person.plist */; };
 		0ABF702A168825A800E2C3A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABF7029168825A800E2C3A1 /* UIKit.framework */; };
 		0ABF702C168825A800E2C3A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABF702B168825A800E2C3A1 /* Foundation.framework */; };
 		0ABF702E168825A800E2C3A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABF702D168825A800E2C3A1 /* CoreGraphics.framework */; };
@@ -21,6 +37,8 @@
 		0ABF704A168825A900E2C3A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABF702B168825A800E2C3A1 /* Foundation.framework */; };
 		0ABF7052168825A900E2C3A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0ABF7050168825A900E2C3A1 /* InfoPlist.strings */; };
 		0ABF7055168825A900E2C3A1 /* AppProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF7054168825A900E2C3A1 /* AppProjectTests.m */; };
+		0ABF70631688385600E2C3A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF70621688385600E2C3A1 /* MainViewController.m */; };
+		0ABF70641688385600E2C3A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF70621688385600E2C3A1 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +52,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A13F4BA1689530500EDBBCD /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		0A13F4BB1689530500EDBBCD /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		0A13F4BF168953FA00EDBBCD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0A13F4C0168953FA00EDBBCD /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0A13F4C41689545400EDBBCD /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		0A13F4C51689545400EDBBCD /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		0A13F4CD1689570200EDBBCD /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		0A13F4CE1689570200EDBBCD /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		0A13F4D91689823500EDBBCD /* 主页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "主页.png"; path = "AppProject/主页.png"; sourceTree = "<group>"; };
+		0A13F4DD168987B100EDBBCD /* 收藏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "收藏.png"; sourceTree = "<group>"; };
+		0A13F4DE168987B100EDBBCD /* 更多.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "更多.png"; sourceTree = "<group>"; };
+		0A13F4E0168987B100EDBBCD /* 资讯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资讯.png"; sourceTree = "<group>"; };
+		0A13F4E6168989BA00EDBBCD /* 看展会.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "看展会.png"; sourceTree = "<group>"; };
+		0A13F4E916899B6C00EDBBCD /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		0A13F4EA16899B6C00EDBBCD /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		0A13F4EB16899B6C00EDBBCD /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
+		0A13F4EE16899BE100EDBBCD /* Person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Person.plist; path = ../Person.plist; sourceTree = "<group>"; };
 		0ABF7025168825A800E2C3A1 /* AppProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABF7029168825A800E2C3A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0ABF702B168825A800E2C3A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +88,8 @@
 		0ABF7051168825A900E2C3A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0ABF7053168825A900E2C3A1 /* AppProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppProjectTests.h; sourceTree = "<group>"; };
 		0ABF7054168825A900E2C3A1 /* AppProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppProjectTests.m; sourceTree = "<group>"; };
+		0ABF70611688385600E2C3A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0ABF70621688385600E2C3A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +116,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A13F4BE1689531300EDBBCD /* SecondController */ = {
+			isa = PBXGroup;
+			children = (
+				0A13F4BF168953FA00EDBBCD /* SecondViewController.h */,
+				0A13F4C0168953FA00EDBBCD /* SecondViewController.m */,
+			);
+			name = SecondController;
+			sourceTree = "<group>";
+		};
+		0A13F4C31689541300EDBBCD /* ThirdController */ = {
+			isa = PBXGroup;
+			children = (
+				0A13F4C41689545400EDBBCD /* ThirdViewController.h */,
+				0A13F4C51689545400EDBBCD /* ThirdViewController.m */,
+			);
+			name = ThirdController;
+			sourceTree = "<group>";
+		};
+		0A13F4CC168956E700EDBBCD /* FourController */ = {
+			isa = PBXGroup;
+			children = (
+				0A13F4E816899B1300EDBBCD /* subControllers */,
+				0A13F4CD1689570200EDBBCD /* FourViewController.h */,
+				0A13F4CE1689570200EDBBCD /* FourViewController.m */,
+			);
+			name = FourController;
+			sourceTree = "<group>";
+		};
+		0A13F4DB1689824200EDBBCD /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				0A13F4DD168987B100EDBBCD /* 收藏.png */,
+				0A13F4E6168989BA00EDBBCD /* 看展会.png */,
+				0A13F4DE168987B100EDBBCD /* 更多.png */,
+				0A13F4E0168987B100EDBBCD /* 资讯.png */,
+				0A13F4D91689823500EDBBCD /* 主页.png */,
+			);
+			name = Resoures;
+			sourceTree = "<group>";
+		};
+		0A13F4E816899B1300EDBBCD /* subControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A13F4E916899B6C00EDBBCD /* PersonViewController.h */,
+				0A13F4EA16899B6C00EDBBCD /* PersonViewController.m */,
+				0A13F4EB16899B6C00EDBBCD /* PersonViewController.xib */,
+			);
+			name = subControllers;
+			sourceTree = "<group>";
+		};
 		0ABF701A168825A800E2C3A1 = {
 			isa = PBXGroup;
 			children = (
+				0A13F4DB1689824200EDBBCD /* Resoures */,
+				0ABF705E1688380300E2C3A1 /* Class */,
 				0ABF702F168825A800E2C3A1 /* AppProject */,
 				0ABF704D168825A900E2C3A1 /* AppProjectTests */,
 				0ABF7028168825A800E2C3A1 /* Frameworks */,
@@ -122,6 +211,7 @@
 		0ABF7030168825A800E2C3A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A13F4EE16899BE100EDBBCD /* Person.plist */,
 				0ABF7031168825A800E2C3A1 /* AppProject-Info.plist */,
 				0ABF7032168825A800E2C3A1 /* InfoPlist.strings */,
 				0ABF7035168825A800E2C3A1 /* main.m */,
@@ -150,6 +240,44 @@
 				0ABF7050168825A900E2C3A1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ABF705E1688380300E2C3A1 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0ABF705F1688382300E2C3A1 /* Controllers */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		0ABF705F1688382300E2C3A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A13F4CC168956E700EDBBCD /* FourController */,
+				0A13F4C31689541300EDBBCD /* ThirdController */,
+				0A13F4BE1689531300EDBBCD /* SecondController */,
+				0ABF70651688413000E2C3A1 /* FirstController */,
+				0ABF70601688383700E2C3A1 /* MainController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0ABF70601688383700E2C3A1 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				0ABF70611688385600E2C3A1 /* MainViewController.h */,
+				0ABF70621688385600E2C3A1 /* MainViewController.m */,
+			);
+			name = MainController;
+			sourceTree = "<group>";
+		};
+		0ABF70651688413000E2C3A1 /* FirstController */ = {
+			isa = PBXGroup;
+			children = (
+				0A13F4BA1689530500EDBBCD /* FirstViewController.h */,
+				0A13F4BB1689530500EDBBCD /* FirstViewController.m */,
+			);
+			name = FirstController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +355,13 @@
 				0ABF703C168825A900E2C3A1 /* Default.png in Resources */,
 				0ABF703E168825A900E2C3A1 /* Default@2x.png in Resources */,
 				0ABF7040168825A900E2C3A1 /* Default-568h@2x.png in Resources */,
+				0A13F4DA1689823500EDBBCD /* 主页.png in Resources */,
+				0A13F4E2168987B100EDBBCD /* 收藏.png in Resources */,
+				0A13F4E3168987B100EDBBCD /* 更多.png in Resources */,
+				0A13F4E5168987B100EDBBCD /* 资讯.png in Resources */,
+				0A13F4E7168989BA00EDBBCD /* 看展会.png in Resources */,
+				0A13F4ED16899B6C00EDBBCD /* PersonViewController.xib in Resources */,
+				0A13F4EF16899BE100EDBBCD /* Person.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +398,12 @@
 			files = (
 				0ABF7036168825A800E2C3A1 /* main.m in Sources */,
 				0ABF703A168825A800E2C3A1 /* AppDelegate.m in Sources */,
+				0ABF70631688385600E2C3A1 /* MainViewController.m in Sources */,
+				0A13F4BC1689530500EDBBCD /* FirstViewController.m in Sources */,
+				0A13F4C1168953FA00EDBBCD /* SecondViewController.m in Sources */,
+				0A13F4C61689545400EDBBCD /* ThirdViewController.m in Sources */,
+				0A13F4CF1689570200EDBBCD /* FourViewController.m in Sources */,
+				0A13F4EC16899B6C00EDBBCD /* PersonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABF7055168825A900E2C3A1 /* AppProjectTests.m in Sources */,
+				0ABF70641688385600E2C3A1 /* MainViewController.m in Sources */,
+				0A13F4BD1689530500EDBBCD /* FirstViewController.m in Sources */,
+				0A13F4C2168953FA00EDBBCD /* SecondViewController.m in Sources */,
+				0A13F4C71689545400EDBBCD /* ThirdViewController.m in Sources */,
+				0A13F4D01689570200EDBBCD /* FourViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +573,7 @@
 				0ABF705A168825A900E2C3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ABF705B168825A900E2C3A1 /* Build configuration list for PBXNativeTarget "AppProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +582,7 @@
 				0ABF705D168825A900E2C3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

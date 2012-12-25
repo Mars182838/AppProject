@@ -7,19 +7,75 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "FourViewController.h"
 
 @implementation AppDelegate
 
 - (void)dealloc
 {
-    [_window release];
+    [_mainController   release];
+    [_firstController  release];
+    [_secondController release];
+    [_thirdController  release];
+    [_fourController   release];
+    [_window           release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+    /** 视图类
+     * _mainController   首页视图
+     * _firstController  看展会视图
+     * _secondController 资讯视图
+     * _thirdController  收藏视图
+     * _fourController   更多视图
+     */
+    _mainController   = [[MainViewController alloc] init];
+    _firstController  = [[FirstViewController alloc] init];
+    _secondController = [[SecondViewController alloc] init];
+    _thirdController  = [[ThirdViewController alloc] init];
+    _fourController   = [[FourViewController alloc] init];
+    
+    UINavigationController *navMianController = [[UINavigationController alloc] initWithRootViewController:_mainController];
+    UINavigationController *navFirstController = [[UINavigationController alloc] initWithRootViewController:_firstController];
+    UINavigationController *navSecondController = [[UINavigationController alloc] initWithRootViewController:_secondController];
+    UINavigationController *navThirdController = [[UINavigationController alloc] initWithRootViewController:_thirdController];
+    UINavigationController *navFourController = [[UINavigationController alloc] initWithRootViewController:_fourController];
+    
+    /** tabBar标签视图 */
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    NSArray *arrayControllers = [[NSArray alloc] initWithObjects:navMianController,navFirstController,navSecondController,navThirdController,navFourController, nil];
+    tabBar.viewControllers = arrayControllers;
+    self.window.rootViewController = tabBar;
+    
+    navMianController.tabBarItem.title  =   @"主页";
+    navMianController.tabBarItem.image  = [UIImage imageNamed:@"主页.png"];
+    
+    navFirstController.tabBarItem.title =   @"看展会";
+    navFirstController.tabBarItem.image = [UIImage imageNamed:@"看展会.png"];
+    
+    navSecondController.tabBarItem.title =  @"资讯";
+    navSecondController.tabBarItem.image = [UIImage imageNamed:@"资讯.png"];
+    
+    navThirdController.tabBarItem.title =   @"收藏";
+    navThirdController.tabBarItem.image = [UIImage imageNamed:@"收藏.png"];
+    
+    navFourController.tabBarItem.title  =   @"更多";
+    navFourController.tabBarItem.image  = [UIImage imageNamed:@"更多.png"];
+    
+    [navMianController   release];
+    [navFirstController  release];
+    [navSecondController release];
+    [navThirdController  release];
+    [navFourController   release];
+    [tabBar release];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
