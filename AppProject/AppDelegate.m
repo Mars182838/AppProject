@@ -48,9 +48,13 @@
     UINavigationController *navThirdController = [[UINavigationController alloc] initWithRootViewController:_thirdController];
     UINavigationController *navFourController = [[UINavigationController alloc] initWithRootViewController:_fourController];
     
-    /** tabBar标签视图 */
+    /** 
+     * tabBar 标签视图控制视图切换 
+     */
+    
     UITabBarController *tabBar = [[UITabBarController alloc] init];
     NSArray *arrayControllers = [[NSArray alloc] initWithObjects:navMianController,navFirstController,navSecondController,navThirdController,navFourController, nil];
+    
     tabBar.viewControllers = arrayControllers;
     self.window.rootViewController = tabBar;
     

@@ -17,6 +17,15 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+/** 视图类
+ * mainController   首页视图
+ * firstController  看展会视图
+ * secondController 资讯视图
+ * thirdController  收藏视图
+ * fourController   更多视图
+ */
+
 @property (nonatomic, strong) MainViewController *mainController;
 @property (nonatomic, strong) FirstViewController *firstController;
 @property (nonatomic, strong) SecondViewController *secondController;

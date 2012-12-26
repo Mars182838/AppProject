@@ -7,6 +7,7 @@
 //
 
 #import "FourViewController.h"
+#import "PersonViewController.h"
 
 @interface FourViewController ()
 
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
     self.title = @"更多";
-    self.messageTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.messageTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.messageTableView.delegate = self;
     self.messageTableView.dataSource = self;
     [self.view addSubview:self.messageTableView];
@@ -53,7 +54,7 @@
     static NSString *indentifer = @"cellIndentifer";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifer];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:indentifer];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:indentifer] autorelease];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     cell.textLabel.text = [_messageArray objectAtIndex:indexPath.row];
@@ -62,7 +63,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    PersonViewController *person = [[PersonViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:person animated:YES];
 }
 
 @end

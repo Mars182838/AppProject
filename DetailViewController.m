@@ -1,18 +1,19 @@
 //
-//  FirstViewController.m
+//  DetailViewController.m
 //  AppProject
 //
-//  Created by Mars on 12-12-25.
+//  Created by Mars on 12-12-26.
 //  Copyright (c) 2012年 Mars. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "DetailViewController.h"
 
-@interface FirstViewController ()
+@interface DetailViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation DetailViewController
+@synthesize index = _index;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,9 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"看展会";
-    
-    
+//    _index = [[NSString alloc] init];
+    NSLog(@"--%@",_index);
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

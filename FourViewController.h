@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface FourViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-/** messageTableView 显示更多模块里面的相关模块*/
+/** 
+ *messageTableView 显示更多模块里面的相关模块
+ */
 @property (nonatomic, retain) UITableView *messageTableView;
-/** messageArray 存放更多里的相关模块 */
+
+/** 
+ *messageArray 存放更多里的相关模块 
+ */
 @property (nonatomic, retain) NSMutableArray *messageArray;
 
 @end
