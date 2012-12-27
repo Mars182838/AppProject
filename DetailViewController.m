@@ -13,7 +13,6 @@
 @end
 
 @implementation DetailViewController
-@synthesize index = _index;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,12 +23,35 @@
     return self;
 }
 
+-(void)dealloc
+{
+    [_messageString release];
+    [_imageView release];
+    [super dealloc];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    _index = [[NSString alloc] init];
-    NSLog(@"--%@",_index);
-	// Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor grayColor];
+}
+
+-(void)transferImage:(UIImage *)image andString:(NSString *)message
+{
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 240)];
+    _imageView.image = image;
+    [self.view addSubview:_imageView];
+    
+    _messageString = [[UITextView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 240, self.view.frame.size.width, 143)];
+    _messageString.text = message;
+    _messageString.textColor = [UIColor redColor];
+    [self.view addSubview:_messageString];
+
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_messageString resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

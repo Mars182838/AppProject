@@ -16,13 +16,13 @@
 @implementation MainViewController
 @synthesize carousel = _carousel;
 @synthesize detailController = _detailController;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     
-        
     }
     return self;
 }
@@ -31,6 +31,7 @@
 {
     self.carousel = nil;
     [_carousel release];
+    [_label release];
     [super dealloc];
 }
 
@@ -41,33 +42,27 @@
 {
     [super viewDidLoad];
     self.title = @"主页";
-    
     wrap = YES;
     
     _carousel = [[iCarousel alloc] init];
-    _carousel.frame = CGRectMake(0, -100, self.view.frame.size.width, self.view.frame.size.height);
+    _carousel.frame = CGRectMake(0, -60, self.view.frame.size.width, self.view.frame.size.height);
     _carousel.delegate = self;
     _carousel.dataSource = self;
     _carousel.type = iCarouselTypeCoverFlow;
     
     [self.view addSubview:_carousel];
     
-    
-    
-    
-//    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-//    webView.delegate = self;
-//    webView.scalesPageToFit = YES;
-//    NSURL *url = [[NSURL alloc] initWithString:@"http://www.chiconline.com.cn:8080/CHIC/web/introduction/index.jsp"];
-//    [webView loadRequest:[NSURLRequest requestWithURL:url]];
-//    
-//    [self.view addSubview:webView];
-    
+    _label = [[UILabel alloc] init];
+    _label.frame = CGRectMake(0, 0, 320, 60);
+    _label.textAlignment = NSTextAlignmentCenter;
+    _label.text = @"CHIC展会历程";
+    _label.font = [UIFont systemFontOfSize:20];
+    [self.view addSubview:_label];
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    
 }
 
 #pragma mark - 
@@ -78,11 +73,57 @@
     return 6;
 }
 
+/** 创建图片的显示视图，图片以Cover flow形式呈现，并且显示图片的文字描述
+ * @prama  carousel是指的iCarousel的代理方法
+ * @prama  index 是指的通过索引区别
+ * @return UIView 这表明该函数返回的是一个View
+ */
 -(UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
 {
     UIView *view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"huan%d.jpg",index+1]]] autorelease];
     
-    view.frame = CGRectMake(20, 20, 260, 200);
+    view.frame = CGRectMake(20, 20, 260, 240);
+    
+    _label = [[UILabel alloc] init];
+    _label.frame = CGRectMake(0, 220, 320, 100);
+    _label.textAlignment = NSTextAlignmentLeft;
+    _label.font = [UIFont systemFontOfSize:20];
+  
+    switch (index) {
+        case 0:
+        {
+            _label.text = @"2008年展会";
+            break;
+        }
+        case 1:
+        {
+            _label.text = @"2009年";
+            break;
+        }
+        case 2:
+        {
+            _label.text = @"2010年";
+            break;
+        }
+        case 3:
+        {
+            _label.text = @"2011年";
+            break;
+        }
+        case 4:
+        {
+            _label.text = @"2012年";
+            break;
+        }
+        case 5:
+        {
+            _label.text = @"2013年";
+            break;
+        }
+    }
+    
+    [view addSubview:_label];
+
     return view;
 }
 
@@ -91,23 +132,55 @@
     return 6;
 }
 
-- (CGFloat)carouselItemWidth:(iCarousel *)carousel
-{
-    return 200;
-}
-
-//是否支持循环查看图片
+/** 是否支持循环查看图片 */
 -(BOOL)carouselShouldWrap:(iCarousel *)carousel
 {
     return wrap;
 }
 
+/** 该方法是点击之后会进入DetailViewController界面，显示点击的图片，并且附带图片的介绍
+ *
+ * @prama carousel 表示是iCarousel的代理方法
+ * @prama index 表示根据点击的index可以相应的内容
+ */
 -(void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index
 {
     _detailController = [[DetailViewController alloc] init];
-    [self.navigationController pushViewController:_detailController animated:YES];
-    _detailController.index = [[NSString alloc] initWithFormat:@"%d",index];
-    NSLog(@"------%@",_detailController.index);
+    NSString *str = [NSString stringWithFormat:@"%@",@"石青峰表示，中国海监飞机在东海巡航是由中国海监固定飞机执行的，主要承担中国东海南部、东海东部海域的国家海洋监测和维权巡航监视等任务，兼顾浙江省岛屿保护巡查、赤潮检测。航线覆盖舟山群岛、春晓油气田的南部海域等地，最南到达北纬27°，距钓鱼岛150公里。　中新网北京12月27日电 (董冠洋)针对近日日本战机干扰中国海监飞机在东海春晓油气田没有争议的中国海域巡航一事，中国国家海洋局办公室主任石青峰27日回应称，日方使用军机对中国公务机在没有争议的中国空域正常巡航进行干扰，是有意识升级事态的无理行为，后果由日方承担。"];
+    self.delegate = (id)_detailController;
+    switch (index) {
+        case 0:{
+            
+            [delegate transferImage:[UIImage imageNamed:@"huan1.jpg"] andString:str];
+            break;
+        }
+        case 1:{
+            
+            [delegate transferImage:[UIImage imageNamed:@"huan2.jpg"] andString:str];
+            break;
+        }
+        case 2:{
+
+            [delegate transferImage:[UIImage imageNamed:@"huan3.jpg"] andString:str];
+            break;
+        }
+        case 3:{
+
+            [delegate transferImage:[UIImage imageNamed:@"huan4.jpg"] andString:str];
+            break;
+        }
+        case 4:{
+            
+                [delegate transferImage:[UIImage imageNamed:@"huan5.jpg"] andString:str];
+                break;
+        }
+        case 5:{
+                
+                [delegate transferImage:[UIImage imageNamed:@"huan4.jpg"] andString:str];
+                break;
+        }
+    }
+     [self.navigationController pushViewController:_detailController animated:YES];
 }
 
 @end

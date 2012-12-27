@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0D32AB168C39BD00F94575 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D32AA168C39BD00F94575 /* Icon.png */; };
+		0A0D32AD168C39DC00F94575 /* Icon@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D32AC168C39DC00F94575 /* Icon@2X.png */; };
 		0A13F4BC1689530500EDBBCD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4BB1689530500EDBBCD /* FirstViewController.m */; };
 		0A13F4BD1689530500EDBBCD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4BB1689530500EDBBCD /* FirstViewController.m */; };
 		0A13F4C1168953FA00EDBBCD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A13F4C0168953FA00EDBBCD /* SecondViewController.m */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0D32AA168C39BD00F94575 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0A0D32AC168C39DC00F94575 /* Icon@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2X.png"; sourceTree = "<group>"; };
 		0A13F4BA1689530500EDBBCD /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		0A13F4BB1689530500EDBBCD /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		0A13F4BF168953FA00EDBBCD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				0ACA27E9168AEF4D00D4C86E /* Default@2x.png */,
 				0ACA27E7168AEF4900D4C86E /* Default-568h@2x.png */,
 				0ACA27E4168AEC5400D4C86E /* Default.png */,
+				0A0D32AA168C39BD00F94575 /* Icon.png */,
+				0A0D32AC168C39DC00F94575 /* Icon@2X.png */,
 			);
 			name = Resoures;
 			sourceTree = "<group>";
@@ -424,6 +430,8 @@
 				0ACA2820168B0C0800D4C86E /* huan4.jpg in Resources */,
 				0ACA2821168B0C0800D4C86E /* huan5.jpg in Resources */,
 				0ACA2822168B0C0800D4C86E /* huan6.jpg in Resources */,
+				0A0D32AB168C39BD00F94575 /* Icon.png in Resources */,
+				0A0D32AD168C39DC00F94575 /* Icon@2X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +530,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -537,6 +546,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "D5E4B104-FA18-4AF3-8C91-689512E32D67";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5E4B104-FA18-4AF3-8C91-689512E32D67";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -549,7 +560,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -557,6 +569,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D5E4B104-FA18-4AF3-8C91-689512E32D67";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5E4B104-FA18-4AF3-8C91-689512E32D67";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
